@@ -21,10 +21,6 @@ export function HomeHero() {
           <div className="absolute left-0 top-6 bottom-6 hidden w-1 rounded-full bg-orange-600 lg:block xl:w-1.5" aria-hidden />
 
           <div className="lg:pl-4">
-            <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.28em] text-orange-800">
-              <Sparkles className="h-4 w-4" aria-hidden />
-              Comparador deportivo
-            </p>
 
             <h1 className="font-display mt-4 max-w-[14ch] text-[clamp(2rem,5vw,3.25rem)] font-extrabold leading-[0.95] tracking-tight text-stone-950">
               Precios.
