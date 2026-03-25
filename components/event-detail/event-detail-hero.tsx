@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import type { Event } from '@/lib/events-data'
 import { getCategoryColor } from '@/lib/events-data'
+import { ShieldAlert } from 'lucide-react'
 
 interface EventDetailHeroProps {
   event: Event
@@ -32,6 +33,24 @@ export function EventDetailHero({ event, dateLong }: EventDetailHeroProps) {
             </h1>
 
             <p className="max-w-2xl text-base leading-relaxed text-stone-600 md:text-lg">{event.description}</p>
+
+            <div
+              role="note"
+              className="flex max-w-2xl gap-3 rounded-2xl border-2 border-orange-800/20 bg-orange-50/90 p-4 text-sm leading-relaxed text-stone-800 shadow-sm"
+            >
+              <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-orange-800" aria-hidden />
+              <div>
+                <p className="font-display font-bold text-stone-900">Aviso</p>
+                <p className="mt-2">
+                  <strong>No vendemos entradas.</strong> Solo comparamos precios de distintos servicios. Las transacciones y las
+                  condiciones ocurren en el proveedor; no recogemos datos de pago ni realizamos operaciones financieras.
+                </p>
+                <p className="mt-2">
+                  El precio final puede diferir del mostrado (comisiones, demanda, promociones). Verifica siempre con el
+                  proveedor.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="order-1 lg:order-2 lg:col-span-5">

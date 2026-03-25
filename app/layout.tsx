@@ -22,7 +22,7 @@ const siteUrl = 'https://entradascompare.com'
 
 export const metadata: Metadata = {
   title: 'entradascompare — Comparador de precios de entradas deportivas',
-  icons: { icon: '/icon.svg', shortcut: '/icon.svg' },
+  icons: { icon: '/favicon.ico', shortcut: '/favicon.ico' },
   description:
     'Comparamos precios publicados por colaboradores para eventos deportivos. No vendemos entradas ni recogemos datos de pago: solo información para decidir dónde comprar.',
   keywords:
