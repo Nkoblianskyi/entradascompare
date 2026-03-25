@@ -10,10 +10,10 @@ interface EventDetailHeroProps {
 
 export function EventDetailHero({ event, dateLong }: EventDetailHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#fffcf7] via-[#f7f3eb] to-[#f0ebe3]">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#fffdf8] via-[#f7f3eb] to-[#f0ebe3]">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_100%_-20%,rgba(194,65,12,0.08),transparent_50%)]" aria-hidden />
 
-      <div className="relative mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8 lg:pb-14 lg:pt-10">
+      <div className="relative mx-auto max-w-7xl px-4 pb-8 pt-6 sm:px-6 lg:px-8 lg:pb-10 lg:pt-8">
         <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-10 lg:gap-y-0">
           {/* Mobile: image first; desktop: text left, image right */}
           <div className="order-2 space-y-6 lg:order-1 lg:col-span-7">
@@ -28,7 +28,7 @@ export function EventDetailHero({ event, dateLong }: EventDetailHeroProps) {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-700">{event.artist}</p>
             )}
 
-            <h1 className="font-display text-3xl font-bold leading-[1.15] text-stone-900 sm:text-4xl xl:text-[2.35rem]">
+            <h1 className="font-display text-3xl font-bold leading-[1.1] text-stone-900 sm:text-4xl xl:text-[2.2rem]">
               {event.title}
             </h1>
 
@@ -36,7 +36,7 @@ export function EventDetailHero({ event, dateLong }: EventDetailHeroProps) {
 
             <div
               role="note"
-              className="flex max-w-2xl gap-3 rounded-2xl border-2 border-orange-800/20 bg-orange-50/90 p-4 text-sm leading-relaxed text-stone-800 shadow-sm"
+              className="flex max-w-2xl gap-3 rounded-2xl border border-orange-800/20 bg-orange-50/70 p-3 text-xs leading-relaxed text-stone-800"
             >
               <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-orange-800" aria-hidden />
               <div>
@@ -45,7 +45,7 @@ export function EventDetailHero({ event, dateLong }: EventDetailHeroProps) {
                   <strong>No vendemos entradas.</strong> Solo comparamos precios de distintos servicios. Las transacciones y las
                   condiciones ocurren en el proveedor; no recogemos datos de pago ni realizamos operaciones financieras.
                 </p>
-                <p className="mt-2">
+                <p className="mt-1.5">
                   El precio final puede diferir del mostrado (comisiones, demanda, promociones). Verifica siempre con el
                   proveedor.
                 </p>

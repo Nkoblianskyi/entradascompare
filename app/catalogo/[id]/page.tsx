@@ -1,9 +1,8 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ChevronRight, ShieldAlert } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { events, formatPrice, getMinPrice } from '@/lib/events-data'
 import { EventCard } from '@/components/event-card'
-import { DisclaimerBlock } from '@/components/disclaimers'
 import { EventDetailHeader } from '@/components/event-detail/event-detail-header'
 import { EventDetailHero } from '@/components/event-detail/event-detail-hero'
 import { EventDetailMetaBand } from '@/components/event-detail/event-detail-meta-band'
@@ -65,24 +64,10 @@ export default async function EventDetailPage({ params }: Props) {
         sourceCount={availableOffers.length}
       />
 
-      <section className="bg-[#faf8f4] px-4 py-8 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl space-y-6">
-          <DisclaimerBlock variant="strong" />
-          <div className="flex flex-wrap items-start gap-3 rounded-2xl border border-stone-200 bg-white p-4 shadow-sm">
-            <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-orange-700" aria-hidden />
-            <p className="min-w-0 flex-1 text-sm leading-relaxed text-stone-800">
-              <strong className="font-bold">No vendemos entradas.</strong> Solo comparamos precios publicados; el cobro y las
-              condiciones son del colaborador. No recogemos datos de pago. Los importes pueden diferir del precio nominal
-              (gastos, demanda, promociones).
-            </p>
-          </div>
-        </div>
-      </section>
-
       <EventDetailOffersGrid sortedOffers={sortedOffers} minPrice={minPrice} maxPrice={maxPrice} />
 
       {relatedEvents.length > 0 && (
-        <section className="border-t border-stone-800/20 bg-mesh-warm py-14 text-stone-100 md:py-20">
+        <section className="border-t border-stone-800/20 bg-mesh-warm py-12 text-stone-100 md:py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
@@ -106,7 +91,7 @@ export default async function EventDetailPage({ params }: Props) {
         </section>
       )}
 
-      <section className="border-t border-orange-900/25 bg-mesh-warm py-10">
+      <section className="border-t border-orange-900/25 bg-mesh-warm py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6 lg:px-8">
           <p className="text-center text-sm text-stone-300 sm:text-left">
             Los colaboradores cumplen normas de publicación propias. Si tienes dudas sobre comisiones o disponibilidad, revisa su

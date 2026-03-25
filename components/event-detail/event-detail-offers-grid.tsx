@@ -15,7 +15,7 @@ function barWidth(price: number, min: number, max: number): number {
 
 export function EventDetailOffersGrid({ sortedOffers, minPrice, maxPrice }: EventDetailOffersGridProps) {
   return (
-    <section className="scroll-mt-28 bg-stripe-amber py-14 md:py-20" id="ofertas" aria-labelledby="ofertas-title">
+    <section className="scroll-mt-28 bg-stripe-amber py-12 md:py-16" id="ofertas" aria-labelledby="ofertas-title">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 max-w-2xl">
           <p className="font-display text-xs font-bold uppercase tracking-widest text-orange-900/90">Colaboradores</p>
